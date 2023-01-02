@@ -37,7 +37,9 @@ def complicated_matrix_function(M, a, b):
     """
     out = None
     ### YOUR CODE HERE
-    pass
+    c = dot_product(a, b)
+    d = dot_product(M, a.T)
+    out = dot_product(c, d)
     ### END YOUR CODE
 
     return out
