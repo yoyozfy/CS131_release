@@ -39,7 +39,7 @@ def complicated_matrix_function(M, a, b):
     ### YOUR CODE HERE
     c = dot_product(a, b)
     d = dot_product(M, a.T)
-    out = dot_product(c, d)
+    out = dot_product(c, d.T).T
     ### END YOUR CODE
 
     return out
@@ -60,7 +60,7 @@ def eigen_decomp(M):
     w = None
     v = None
     ### YOUR CODE HERE
-    pass
+    w, v = np.linalg.eig(M)
     ### END YOUR CODE
     return w, v
 
